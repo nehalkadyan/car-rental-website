@@ -1,0 +1,72 @@
+.car_carousel{
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel_container{
+    width: 75%;
+    margin: auto;
+
+}
+
+.carousel_container>h1{
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+
+.carousel_container>p{
+    text-align: center;
+}
+
+.carousel_card_container{
+    margin: 2rem auto;
+    
+}
+
+.card_img_container{
+  overflow: hidden;
+  width: 100%;
+  height: 70%;
+} 
+
+.carousel_card{
+    width: 350px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+   
+
+
+}
+
+.card_img_container>img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease ;
+
+    
+}
+
+.card_img_container>img:hover{
+    transform: scale(1.05);
+    object-fit: cover;
+
+}
+.car_carousel_body{
+    padding: 1rem;
+    background-color: #f6f6f6;
+    transition:all 0.3s ease ;
+}
+
+.car_carousel_body:hover{
+    background-color: green;
+    color: #fff;
+}
+
+@media screen and (max-width: 762px){
+    .car_carousel{
+        height: 70vh;
+    }
+}

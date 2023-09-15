@@ -1,0 +1,188 @@
+.brands{
+  width: 100%;
+}
+
+.brands_section{
+ width: 75%;   
+ margin:  4rem auto;
+}
+
+.brand_items{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand_items>img{
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.brand_cards{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.brand_card{
+    display: flex;
+    width: 330px;
+    gap: 1rem;
+    
+    
+}
+
+.brand_card>img{
+    
+    width: 64px;
+    height: 64px;
+}
+
+.brand_card>div>span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brand_card>div>p{
+   line-height: 30px;
+   font-size: 16px;
+   margin-top: 6px;
+   
+}
+
+.service_cards{
+    display: flex;
+    margin-top: 3rem;
+    gap: 1.3rem;
+}
+
+.service_card{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgba(219, 219, 219, 0.947);
+    padding: 1.3rem;
+    border-radius: 10px;
+
+}
+
+.service_card>div>span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service_card>div>p{
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(88, 88, 88);
+}
+
+.service_card>img{
+    height: 112px;
+    width: 126px;
+}
+
+.service_card>div>button{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    color: rgb(93, 93, 249);
+    letter-spacing: 1px;
+}
+
+.service_card>div>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.service_card>div>div>input{
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    width: 60%;
+}
+
+.service_card>div>div .offer_btn{
+    background-color: green;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .brand_items{
+        gap: 2rem;
+    }
+
+    .brand_cards{
+     
+        gap: 2rem;
+        flex-direction: column;
+        
+      }
+
+      .brand_card{ 
+        width: 100%;
+        gap: 1rem; 
+    }
+
+    .brand_card>img{
+    
+        width: 80px;
+        height: 80px;
+    }
+    
+    .brand_card>div>span{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .brand_card>div>p{
+       line-height: 30px;
+       font-size: 20px;
+       margin-top: 6px;
+       
+    }
+
+    .service_cards{
+        flex-direction: column;
+    }
+    
+    .service_card{
+        
+        width: 100%;
+        align-items: center;
+    }
+
+    .brands_section{
+        width: 85%;   
+       }
+
+       
+}
+
+@media  screen and (max-width:600px) {
+    .service_card>div>div{
+        flex-direction: column;
+        align-items: self-start;
+        gap: 1rem;
+    }
+
+    .service_card>div>div>input{
+        width: 100%;
+    }
+
+    .service_card>div>div .offer_btn{
+        width: 100%;
+    }
+}

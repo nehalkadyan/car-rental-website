@@ -1,0 +1,181 @@
+.model_selector_container{
+    width: 100%;
+    text-align: center;
+    height: 90vh;
+
+}
+
+.model_selector_heading{
+    width: 35%;
+    margin: auto;
+}
+
+.car_data{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+
+}
+
+.model_names{
+    padding: 1rem;
+    font-size: 17px;
+     display: flex;
+     flex-direction: column;
+     width: 30%;
+}
+
+.model_names>div{
+    font-weight: bold;
+    padding: 1rem 0rem;
+    transition: 0.2s all ease;
+}
+
+.model_names>div:hover{
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.car_images{
+    width: 40%;
+    height: 250px;
+    display: flex;
+    justify-content: start;
+    margin-right: 2rem;
+}
+
+.car_images>img{
+  width: 100%;
+}
+
+.model_table{
+    width: 30%;
+    position: relative;
+    
+
+}
+
+.model_table>span{
+  position: relative;
+  left: 4rem;
+  bottom: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; 
+  background-color: green;
+  padding: 0.7rem;
+  border-radius: 5px;
+  width: 100%;
+  
+}
+
+.model_table>tr{
+    margin-top: 2rem;
+}
+
+.horizontal_row{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width: 1000px){
+
+    .model_selector_heading{
+        width: 80%;
+        margin: auto;
+    }
+
+    .car_data{
+        flex-direction: column;
+    }
+    .model_names{
+        flex-direction: row;
+        width: 95%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 13px;
+        margin-left: 2rem;
+        
+    }
+
+    .model_names>div{
+        background-color: #f7f7f7;
+        padding: 1rem 1rem;
+        
+    }
+
+    
+
+    .model_selector_container{
+        height: 100%;
+    
+    }
+
+    .car_images{
+        width: 70%;
+        height: 60%;
+    }
+
+    .model_table{
+        width: 85%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .model_table>span{
+      position: inherit;
+      left: 0rem;
+      bottom: 0rem;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff; 
+      background-color: green;
+      padding: 0.7rem;
+      border-radius: 5px;
+      width: 100%;
+      
+    }
+    
+    .model_table>tr{
+        margin-top: 0.9rem;
+    }
+    
+    .horizontal_row{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 600px){
+
+    .car_data{
+       
+        width: 95%;
+        
+    
+    }
+    .model_names{
+        width: 100%;
+        font-size: 16px;
+    }
+
+   
+}
+
+
+

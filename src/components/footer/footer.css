@@ -1,0 +1,95 @@
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: #fff;
+}
+
+.footer_container{
+    padding-top: 3rem;
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.footer_section>ul{
+    list-style: none;
+}
+
+.working_footer, .company_footer{
+    margin-left: 1.8rem;
+}
+
+.footer_logo> .large_font{
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.footer_logo> .small_font{
+    font-size: 18px;
+}
+
+.footer_para{
+    margin: 1rem 0rem;
+}
+
+.footer_section>input{
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0rem;
+    outline: none;
+}
+
+.footer_section>button{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.7rem 0rem;
+    border: none;
+    background-color: forestgreen;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:762px){
+    .footer_container{
+        padding-top: 3rem;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        grid-gap: 4rem;
+        
+    }
+
+    .footer{
+        height: 100%;
+        padding-bottom: 3rem;
+    }
+
+   
+}
+
+@media screen and (max-width: 460px){
+    .footer_logo> .large_font{
+        font-size: 20px;
+        
+     }
+     
+     .footer_logo> .small_font{
+         font-size: 13px;
+     }
+
+     .footer_container{
+        
+        grid-gap: 7rem;
+        
+    }
+    
+}
